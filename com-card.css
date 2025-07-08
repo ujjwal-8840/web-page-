@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body,html{
+    font-family: "Roboto", sans-serif;
+    background-color: var(--second);
+  background-color: black;
+   
+}
+:root{
+    --first:white;
+    --second:black;
+    --third:rgb(233, 86, 18);
+}
+.container{
+    width: 100%;
+    height: 30vh;
+    background-color: var(--second);
+     background-image: url(study.jpg);
+     background-size: 100% 100%;
+     
+}
+.navbar{
+    width: 70%;
+    height: 7vh;
+    background-color: var(--first);
+    margin-left: 200px;
+    border: 1px solid white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+   
+}
+.navbar-left{
+    display: flex;
+    gap: 10px;
+}
+.us{
+    border: 1px solid var(--third);
+    color: var(--first);
+    border-radius: 50%;
+    background-color: var(--third);
+    margin-left: 5px;
+    padding: 5px;
+}
+.name{
+    color: var(--third);
+}
+.navbar-mid{
+    display: flex;
+    gap: 15px;
+}
+.home:hover,.serv:hover,.port:hover,.about:hover{
+    color: var(--third);
+    cursor: pointer;
+}
+.cont:hover,.page:hover{
+    color: var(--third);
+    cursor: pointer;
+}
+.btn-1{
+    border-radius: 20px;
+    padding: 10px;
+    color: var(--first);
+    background-color: black;
+cursor: pointer;
+}
+.btn-1:hover{
+    background-color: var(--third);
+}
+.middle-ab{
+    color: var(--first);
+    text-align: center;
+
+margin-top: 40px;
+}
+.middle-me{
+    color: var(--first);
+    text-align: center;
+
+}
+.middle-container{
+    width: 100%;
+    height: 60vh;
+    background-color: var(--second);
+ 
+}
+.photo{
+width: 300px;
+height: 280px;
+border: 2px solid var(--second);
+border-radius: 50%;
+}
+
+.image{
+    display: flex;
+    gap: 200px;
+}
+.middle-section{
+    width: 400px;
+    padding: 20px;
+}
+.btn-2{
+    border: 2px solid var(--third);
+    border-radius: 20px;
+    padding: 5px;
+    background-color: var(--second);
+    color: var(--first);
+    cursor: pointer;
+}
+.btn-2:hover{
+    background-color: var(--third);
+}
+.para{
+    color: var(--first);
+    font-size: 2rem;
+    margin-top: 10px;
+}
+.para-1{
+    color: var(--first);
+    margin-top: 10px;
+}
+.info{
+    width: 550px;
+    border: 1px solid rgba(34, 29, 29, 0.986);
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    color: var(--first);
+    column-gap: 10px;
+    cursor: pointer;
+    
+}
+.info:hover{
+    transform: scale(1.1);
+     transition: transform 0.3s ease-in-out ;
+}
+.btn-3{
+    border: 2px solid var(--third);
+    padding: 10px;
+    border-radius: 20px;
+ color: var(--first);
+ background-color: var(--second);
+margin-top: 20px;
+cursor: pointer;
+
+}
+.btn-3:hover{
+background-color: var(--third);
+}
+.btn-4{
+    border: 2px solid var(--third);
+    padding: 10px;
+    border-radius: 20px;
+ color: var(--first);
+ background-color: var(--second);
+margin-top: 20px;
+margin-left: 20px;
+cursor: pointer;
+}
+.btn-4:hover{
+    background-color: var(--third);
+    
+}
+.sec-middle-container{
+    width: 100%;
+    height: 100px;
+    background-color:var(--second);
+}
+.work{
+    color: var(--first);
+}
+.sk{
+color:var(--third);
+}
+.h1{
+    text-align: center;
+   
+}
+.middle-p{
+    color: var(--first);
+    text-align: center;
+    margin-top: 20px;
+    word-wrap: break-word;
+    
+}
+.mid-middle-container{
+  
+    display: flex;
+    width: 100%;
+    height:500px;
+    border: 1px solid rgba(0, 0, 0, 0.486);
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+   
+}
+/* .sec-html,.sec-css,.sec-js,.sec-react,.sec-figma,.sec-animation{
+    width: 300px;
+    padding: 20px;
+    margin: 10px;
+    color: var(--first);
+    border: 1px solid var(--first);
+    border-radius: 10px;
+
+}
+.sec-html:hover,.sec-css:hover,.sec-js:hover,.sec-react:hover,.sec-figma:hover,.sec-animation:hover{
+    background-color:var(--third);
+    color: black;
+    cursor: pointer;
+} */
+ .sec-html, .sec-css, .sec-js, .sec-react, .sec-figma, .sec-animation {
+    width: 300px;
+    padding: 20px;
+    margin: 10px; /* ✅ fixed */
+    color: var(--first);
+    border: 1px solid var(--first);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.sec-html:hover, .sec-css:hover, .sec-js:hover,
+.sec-react:hover, .sec-figma:hover, .sec-animation:hover {
+    background-color: var(--third);
+    color: black;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.service{
+  text-align: center;
+  margin-top: 50px;
+}
+.my{
+  color: var(--first);
+}
+.ser{
+  color: var(--third);
+}
+.sev{
+  margin-top: 10px;
+  color: var(--first);
+}
+
