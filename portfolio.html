@@ -9,10 +9,6 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="com-card.css">
-
-
-
-
 </head>
 <body>
     
@@ -23,12 +19,10 @@
             <H2 class="name">Ujjwal</H2>
         </div>
         <div class="navbar-mid">
-            <div  class="home">Home</div>
-            <div class="serv">Service</div>
+            <div  class="home" >Home</div>
+            <div class="skill">Skills</div>
             <div class="port">Portfolio</div>
-            <div class="about">About</div>
             <div class="cont">Contact</div>
-            <div class="page">Pages</div>
         </div>
         <div class="navbar-right">
             <button class="btn-1">Let's Talk</button>
@@ -36,8 +30,8 @@
         
         </div>
         <div class="middle">
-            <h1 class="middle-ab">About Me</h1>
-            <h5 class="middle-me">home > About me</h5>
+           <h1 class="middle-ab">HOME</h1>
+           
     </div>
    </div>
 
@@ -45,18 +39,10 @@
     <div class="image">
         <img src="ujjwal.jpg" class="photo">
         <section class="middle-section">
-            <button class="btn-2">About Me</button>
+           
             <p class="para">Get a website that will make a lasting impression on your audience</p>
             <p class="para-1"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo facere, voluptate repellat modi temporibu.</p>
-            <div class="info">
-                <p><strong> Name:</strong> Ujjwal sahu</p>
-                <p><strong> phone no:</strong> +91 8840778802</p>
-                <p><strong> E Mail:</strong> Ujjwals6901@gmail.com</p>
-                <p><strong> Twitter:</strong> @Ujjwalsahu6901</p>
-            </div>
-            <div class="btn-box"></div>
-            <button class="btn-3">Contact Me</button>
-            <button class="btn-4">Download my resume </button>
+            <button class="btn-4" onclick="downloadResume()">Download my resume </button>
         </section>
         
    </div>
@@ -107,13 +93,84 @@
     <p class="fig-animate">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni perferendis voluptas earum asperiores, nemo deleniti dolorem necessitatibu.</p>
     </section>
 </div>
-<!-- <div class="service">
-    <h1>
-        <span class="my">My</span>
-        <span class="ser">Services</span>
-    </h1>
+<div class="sahu">
+    <h1 class="folio">Portfolio</h1>
+    </div>
+    <div class="project-container">
+        <section class="sec-pro1">
+     <h3 class="pro-1">Project 1</h3>
+     <br>
+     <p class="hotel">Hotel management app</p>
+     <br>
+     <p class="tech-stack1">Developed a Hotel Management App using Node.js, Express.js, MongoDB, Mongoose, JWT, Passport-local, and bcrypt for secure authentication, allowing users to register, login, and manage hotel operations efficiently.
+</p>
+     </section>
+     <section class="sec-pro2">
+     <h3 class="pro-2">Project 2</h3>
+     <br>
+     <p class="voting">Voting app</p>
+     <br>
+     <p class="tech-stack2">Built a secure Voting App with Ai integartion using Node.js, Express, MongoDB, and Mongoose. Integrated JWT, Passport-local, and bcrypt for authentication. Used Nodemailer for email services and Google Generative AI for dynamic content generation. Enhanced user experience with lodash, body-parser, and dotenv for environment handling. Ideal for real-time, authenticated voting systems.
+</p>
+     </section>
+     <section class="sec-pro3">
+     <h3 class="pro-3">Project 3</h3>
+     <br>
+     <p class="mini-portfolio">Mini portfolio website</p>
+     <br>
+     <p class="tech-stack3">Created a mini portfolio website using HTML, CSS, and JavaScript to showcase projects and skills. Features responsive design, smooth scrolling, and interactive UI elements for an engaging and professional presentation that show me like a creative developer in front of recruiter</p>
+     </section>
+</div>
+<div class="me">
+    <h1 class="co">Contact info</h1>
 
-    <p class="sev"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas moles.</p>
-</div> -->
+</div>
+  <div class="contact-container">
+    
+    <div class="con-image">
+        <img src="contact.jpg" class="con-photo">
+        <section class="contact-section">
+           
+            <div class="con-info">
+                <p><strong> Name:</strong> Ujjwal sahu</p>
+                <p><strong> phone no:</strong> +91 8840778802</p>
+                <p><strong> E Mail:</strong> Ujjwals6901@gmail.com</p>
+                <p><strong> Twitter:</strong> @Ujjwalsahu6901</p>
+            </div>
+        </section>
+        
+   </div>
+<script>
+   function downloadResume(){
+  document.querySelector("downloadResume")
+    // Create a temporary link
+    const link = document.createElement("a");
+    link.href = "UJJWAL SAHU.DOCX"; // Path to your resume
+    link.download = "Ujjwal_Sahu_Resume(2).pdf"; // Optional: customize the download name
+    link.click();
+  
+}
+ document.querySelector('.home').addEventListener('click', () => {
+    document.querySelector('.middle').scrollIntoView({
+      behavior: 'smooth'
+    });
+  });
+document.querySelector('.skill').addEventListener('click',()=>{
+    document.querySelector('.work').scrollIntoView({
+        behavior:"smooth"
+    });
+});
+document.querySelector('.port').addEventListener('click',()=>{
+    document.querySelector('.folio').scrollIntoView({
+        behavior:"smooth"
+    });
+});
+document.querySelector('.cont').addEventListener('click',()=>{
+    document.querySelector('.co').scrollIntoView({
+        behavior:"smooth"
+    });
+});
+
+</script>
 </body>
 </html>
